@@ -11,6 +11,14 @@ export class Board {
         this.createBoard();
     }
 
+    getRowCount(): number {
+        return ROWS;
+    }
+    
+    getColCount(): number {
+        return COLS;
+    }    
+
     createBoard(): void {
         this.board.push(new Piece(1, 1, BLUE));
         this.board.push(new Piece(1, COLS - 2, BLUE));
